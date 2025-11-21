@@ -1,23 +1,23 @@
 import Navigation from "@/components/Navigation";
-import Hero from "@/components/Hero";
+import HeroEnhanced from "@/components/HeroEnhanced";
 import About from "@/components/About";
-import Projects from "@/components/Projects";
-import Skills from "@/components/Skills";
-import Timeline from "@/components/Timeline";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import ProjectsEnhanced from "@/components/ProjectsEnhanced";
+import SkillsEnhanced from "@/components/SkillsEnhanced";
+import TimelineEnhanced from "@/components/TimelineEnhanced";
+import ContactEnhanced from "@/components/ContactEnhanced";
+import FooterEnhanced from "@/components/FooterEnhanced";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950">
       <Navigation />
-      <Hero />
+      <HeroEnhanced />
       <About />
-      <Projects />
-      <Skills />
-      <Timeline />
-      <Contact />
-      <Footer />
+      <ProjectsEnhanced />
+      <SkillsEnhanced />
+      <TimelineEnhanced />
+      <ContactEnhanced />
+      <FooterEnhanced />
     </div>
   );
 };
