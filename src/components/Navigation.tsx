@@ -23,7 +23,7 @@ const Navigation = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-background/80 backdrop-blur-lg border-b border-border shadow-sm"
+          ? "bg-slate-950/80 backdrop-blur-xl border-b border-cyan-500/30 shadow-lg shadow-cyan-500/20"
           : "bg-transparent"
       }`}
     >
@@ -31,7 +31,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           <button
             onClick={() => scrollToSection("hero")}
-            className="text-xl font-bold text-foreground hover:text-primary transition-colors"
+            className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent hover:from-cyan-300 hover:to-blue-400 transition-all"
           >
             KKK
           </button>
@@ -41,17 +41,17 @@ const Navigation = () => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                className="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors relative group"
               >
                 {item}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 group-hover:w-full transition-all duration-300" />
               </button>
             ))}
           </div>
 
           <Button
             onClick={() => window.open("/cv.pdf", "_blank")}
-            variant="default"
-            className="shadow-lg hover:shadow-xl transition-shadow"
+            className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 shadow-lg shadow-blue-500/50 hover:shadow-cyan-500/50 transition-all hover:scale-105 border border-cyan-400/50"
           >
             Download CV
           </Button>
