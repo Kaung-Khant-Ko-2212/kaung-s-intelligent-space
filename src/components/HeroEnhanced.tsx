@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Suspense } from "react";
 import Scene3D from "./Scene3D";
 import profileAvatar from "@/assets/my_profile.jpg";
-import cvPdf from "@/assets/Kaung Khant Ko.pdf";
 
 const HeroEnhanced = () => {
   const scrollToSection = (id: string) => {
@@ -133,7 +132,7 @@ const HeroEnhanced = () => {
               variant="outline"
               onClick={() => {
                 const link = document.createElement("a");
-                link.href = cvPdf;
+                link.href = `${import.meta.env.BASE_URL}Kaung Khant Ko.pdf`;
                 link.download = "Kaung Khant Ko.pdf";
                 link.click();
               }}

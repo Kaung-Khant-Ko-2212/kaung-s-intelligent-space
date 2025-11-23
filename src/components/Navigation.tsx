@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import cvPdf from "@/assets/Kaung Khant Ko.pdf";
 
 const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -53,7 +52,7 @@ const Navigation = () => {
           <Button
             onClick={() => {
               const link = document.createElement("a");
-              link.href = cvPdf;
+              link.href = `${import.meta.env.BASE_URL}Kaung Khant Ko.pdf`;
               link.download = "Kaung Khant Ko.pdf";
               link.click();
             }}
