@@ -21,17 +21,7 @@ const FooterEnhanced = () => {
           <p className="text-slate-400 mb-4">
             © 2025 Kaung Khant Ko
           </p>
-          <div className="relative inline-block group">
-            {/* Glow effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 via-purple-500 to-cyan-500 rounded-full blur-xl opacity-0 group-hover:opacity-50 transition-opacity" />
-            
-            <p className="relative text-sm px-8 py-3 rounded-full bg-gradient-to-r from-slate-900/90 to-slate-800/90 backdrop-blur-sm border border-cyan-500/30 shadow-lg shadow-cyan-500/20 group-hover:border-cyan-400/50 transition-all">
-              <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent font-semibold">
-                Built with AI & Love
-              </span>{" "}
-              <span className="inline-block animate-pulse">✨</span>
-            </p>
-          </div>
+          
         </div>
       </div>
     </footer>
